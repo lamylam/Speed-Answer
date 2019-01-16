@@ -1,0 +1,72 @@
+
+/* Class = "UIButton"; normalTitle = "Continuer"; ObjectID = "5Ve-3f-4gF"; */
+"5Ve-3f-4gF.normalTitle" = "Continuer";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "5mX-IP-z47"; */
+"5mX-IP-z47.title" = "Back";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "6i8-di-xiN"; */
+"6i8-di-xiN.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Règles du jeu"; ObjectID = "77R-gU-8ge"; */
+"77R-gU-8ge.normalTitle" = "Règles du jeu";
+
+/* Class = "UIButton"; normalTitle = "Aide"; ObjectID = "7IC-GN-dBK"; */
+"7IC-GN-dBK.normalTitle" = "Aide";
+
+/* Class = "UIButton"; normalTitle = "Quitter"; ObjectID = "7Wr-4s-nmx"; */
+"7Wr-4s-nmx.normalTitle" = "Quitter";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GZo-uO-pOz"; */
+"GZo-uO-pOz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "JTY-SY-kZ5"; */
+"JTY-SY-kZ5.text" = "0";
+
+/* Class = "UILabel"; text = "Meilleurs score :"; ObjectID = "LhE-Za-eyT"; */
+"LhE-Za-eyT.text" = "Meilleurs score :";
+
+/* Class = "UIButton"; normalTitle = "Oui"; ObjectID = "Tzr-7r-AG4"; */
+"Tzr-7r-AG4.normalTitle" = "Oui";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "U9s-mv-p16"; */
+"U9s-mv-p16.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Bienvenue à Speed Answer"; ObjectID = "W6v-Vs-hgF"; */
+"W6v-Vs-hgF.title" = "Bienvenue à Speed Answer";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "YGX-2L-1E1"; */
+"YGX-2L-1E1.text" = "Detail";
+
+/* Class = "UILabel"; text = "L'homme est triste"; ObjectID = "aiu-vp-OSq"; */
+"aiu-vp-OSq.text" = "L'homme est triste";
+
+/* Class = "UILabel"; text = "Son"; ObjectID = "cRa-zm-idt"; */
+"cRa-zm-idt.text" = "Son";
+
+/* Class = "UILabel"; text = "Historique----------->"; ObjectID = "cWd-IL-LLK"; */
+"cWd-IL-LLK.text" = "Historique----------->";
+
+/* Class = "UILabel"; text = "Speed Answer "; ObjectID = "cvk-mh-CYf"; */
+"cvk-mh-CYf.text" = "Speed Answer ";
+
+/* Class = "UILabel"; text = "Essayez de répondre le plus rapidement possible pour gagner le maximum de points "; ObjectID = "eZv-xa-saB"; */
+"eZv-xa-saB.text" = "Essayez de répondre le plus rapidement possible pour gagner le maximum de points ";
+
+/* Class = "UIButton"; normalTitle = "Commencer la partie"; ObjectID = "jem-NV-l8e"; */
+"jem-NV-l8e.normalTitle" = "Commencer la partie";
+
+/* Class = "UILabel"; text = "Jeu mis en pause"; ObjectID = "nF3-qA-jqO"; */
+"nF3-qA-jqO.text" = "Jeu mis en pause";
+
+/* Class = "UILabel"; text = "La femme sourit"; ObjectID = "nlk-7l-e03"; */
+"nlk-7l-e03.text" = "La femme sourit";
+
+/* Class = "UIButton"; normalTitle = "Non"; ObjectID = "r7G-xx-e5k"; */
+"r7G-xx-e5k.normalTitle" = "Non";
+
+/* Class = "UIButton"; normalTitle = "Recommencer"; ObjectID = "s4e-zU-TQW"; */
+"s4e-zU-TQW.normalTitle" = "Recommencer";
+
+/* Class = "UILabel"; text = "L'homme porte des lunettes"; ObjectID = "uDo-jm-9Oc"; */
+"uDo-jm-9Oc.text" = "L'homme porte des lunettes";
