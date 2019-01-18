@@ -11,5 +11,5 @@ import RealmSwift
 
 class AllScores : Object {
     @objc dynamic var score:String = "0000"
-    
+
 }

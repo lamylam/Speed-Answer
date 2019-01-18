@@ -7,16 +7,30 @@
 //
 
 import UIKit
+//import RealmSwift
+
 
 class ScoreTableViewController: UITableViewController {
+  var  scoreTable:Int=0
+    let section = ["Best Score", "les 10 derniers scores"]
+    let items=[["4"],["3","22","55","23"]]
+    
+/*   var _scoreList:Results<DataBase>!
+    var _realm:Realm!
 
-    
      var listePause:[String] = [ "Continuer", "Quitter" ]
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+    
+        
+    /*Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
+        _realm = try! Realm()
+ 
+        print("REALM : \(_realm.configuration.fileURL)")
+        _scoreList = _realm.objects(DataBase.self)
+        */
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,16 +40,22 @@ class ScoreTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    
+    
    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 20
+    return self.section.count
     }
+    
+   
+        
+    
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   /* override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return listePause.count
+        return self.section\[section\]
     }
-
+*/
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pauseId", for: indexPath)
@@ -46,7 +66,7 @@ class ScoreTableViewController: UITableViewController {
        // cell.textLabel?.text=ligne.name
        // cell.detailTextLabel?.text=ligne.phone
        // cell.textLabel?.text=listePause[indexPath.row]
-       cell.textLabel?.text="0"
+       cell.textLabel?.text=UserDefaults.standard.string(forKey: "bs")
         
         let formatter = DateFormatter()
         // initially set the format based on your datepicker date / server String
@@ -59,9 +79,11 @@ class ScoreTableViewController: UITableViewController {
         formatter.dateFormat = "dd-MMM-yyyy"
         // again convert your date to string
         let myStringafd = formatter.string(from: yourDate!)
-        
+        UserDefaults.standard.set(myStringafd, forKey: "date")
         print(myStringafd)
-     cell.detailTextLabel?.text=myStringafd
+        
+        
+     cell.detailTextLabel?.text=UserDefaults.standard.string(forKey: "date")
         
         
         return cell
@@ -75,8 +97,20 @@ class ScoreTableViewController: UITableViewController {
         
         
     }
+    
+   
+    
  
-
+    /*@IBAction func unwindToShowList(_ unwindSegue: UIStoryboardSegue) {
+        if let sourceViewController = unwindSegue.source as? AddShowViewController,
+            let newShow = sourceViewController.show {
+            try! _realm.write {
+                _realm.add(newShow)
+            }
+            tableView.insertRows(at: [IndexPath(row: _showList.count - 1, section: 0)], with: .automatic)
+        }
+        
+    }*/
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

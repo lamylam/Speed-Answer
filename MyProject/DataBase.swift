@@ -20,6 +20,7 @@ class DataBase : Object {
     func addCharacter(_ scores:AllScores) {
         
         allScores.append(scores)
+      
     }
 }
 
