@@ -12,45 +12,38 @@ import SwiftySound
 class GameViewController:UIViewController {
     
     var answerButton:Bool?
-    var delay:Double=10
-    var countTime:Int=10
+    var delay:Double=30
+    var countTime:Int=30
     var randomImageView:Int?
     
     var secondes:Int=0
     var score:Int = 0
     var timer:Timer?
     var answer:Bool = true
-    let constantWin = 2300
+    var constantWin = 500
     var nameProperties:[Image]=[]
     var a:Bool=true
     var i:Int=0
     var bestScore:Int=0
     var _score:[Int]=[0,0,0,0,0,0,0]
     var dateScore:[String]=["","","","","","",""]
- 
+    var nbBonneReponse:Int=0
     
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var image1: UIImageView!
-    
     @IBOutlet weak var image2: UIImageView!
-    
     @IBOutlet weak var image3: UIImageView!
-    
-    
     @IBOutlet weak var timeLabel: UILabel!
-    
-    
     @IBOutlet weak var answerImage: UIImageView!
-    
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
-    
     @IBOutlet weak var pauseButton: UIButton!
     
     @IBAction func pause() {
         
         timer?.invalidate()
+        
     }
     
     
@@ -222,14 +215,19 @@ class GameViewController:UIViewController {
     func sendMyAnswer(answerB:Bool){
         
         if a==answerB{
-            
+            self.nbBonneReponse+=1
             self.score+=self.constantWin
             self.scoreLabel.text=String(self.score)
             answerImage.image=(UIImage(named: "correct"))
             imageDisappear()
             Sound.play(file: "correctSound.mp3")
-            
+            if     self.nbBonneReponse%3==0{
+                self.constantWin=self.constantWin+550
+            }
+
         } else {
+            self.nbBonneReponse=0
+
             answerImage.image=(UIImage(named: "no-stopping"))
                Sound.play(file: "incorrectSound.wav")
             imageDisappear()

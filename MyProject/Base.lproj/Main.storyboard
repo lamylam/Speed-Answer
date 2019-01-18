@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jI3-w7-4Ez">
-                                <rect key="frame" x="40" y="100" width="334" height="70"/>
+                                <rect key="frame" x="40" y="144" width="334" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="261" verticalHuggingPriority="251" text="Speed Answer " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-mh-CYf" colorLabel="IBBuiltInLabel-Purple">
                                         <rect key="frame" x="0.0" y="0.0" width="244" height="70"/>
@@ -118,10 +118,6 @@
                                     <segue destination="dg6-H9-pM8" kind="show" id="5NT-9g-AKE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-grande-bretagne-100" translatesAutoresizingMaskIntoConstraints="NO" id="69h-DX-PuG">
-                                <rect key="frame" x="338" y="49" width="56" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -308,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBp-3G-rGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636.23188405797111" y="155.70652173913044"/>
+            <point key="canvasLocation" x="607" y="104"/>
         </scene>
         <!--Pause Page-->
         <scene sceneID="nzv-VN-C6c">
@@ -415,7 +411,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGL-XO-6tD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="LbH-KW-iyQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1452.1739130434785" y="155.35714285714286"/>
+            <point key="canvasLocation" x="1493" y="-439"/>
         </scene>
         <!--Title-->
         <scene sceneID="p3N-NE-Dww">
@@ -455,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2I-8e-baX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2250.7246376811595" y="154.07608695652175"/>
+            <point key="canvasLocation" x="548" y="-836"/>
         </scene>
         <!--Historique Table View Controller-->
         <scene sceneID="qji-uV-tN1">
@@ -524,7 +520,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Je-Ar-RRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wAJ-k2-nLW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3053.6231884057975" y="155.70652173913044"/>
+            <point key="canvasLocation" x="732" y="1000"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="Jhs-he-2Lj">
@@ -623,12 +619,13 @@
                         <outlet property="star2" destination="4Fu-fv-lhO" id="ROl-B7-TkT"/>
                         <outlet property="ui_go" destination="v1V-L9-oPm" id="Fd1-j5-v1a"/>
                         <outlet property="ui_star1" destination="Ild-73-i6q" id="Pue-t0-0pd"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="id_home" id="kSE-ld-Yuh"/>
+                        <segue destination="qmF-H2-UtU" kind="unwind" identifier="id_home" unwindAction="unwindToBegining:" id="B6W-Gk-tk0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcR-wP-YFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qmF-H2-UtU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4021.739130434783" y="47.282608695652179"/>
+            <point key="canvasLocation" x="2286" y="377"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u3C-LV-zTD">
@@ -658,11 +655,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxs-WW-rkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="O7a-q7-TBf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4689.8550724637689" y="38.315217391304351"/>
+            <point key="canvasLocation" x="3180" y="392"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-grande-bretagne-100" width="75" height="75"/>
         <image name="idea" width="428.65115356445312" height="428.65115356445312"/>
         <image name="info" width="396.3870849609375" height="396.3870849609375"/>
         <image name="list" width="46.428211212158203" height="46.428211212158203"/>
@@ -674,6 +670,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qTe-Mw-7RC"/>
-        <segue reference="kSE-ld-Yuh"/>
     </inferredMetricsTieBreakers>
 </document>
